@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilospag.css">
+    <link rel="stylesheet" href="./css/fontello.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Vital Care</title>
+</head>
+<body>
+    <header>
+        <h1 class="icon-health">Centro Médico Vital Care</h1>   
+    </header>
+    <main>
+        <form class="forms" id="formsdoc">
+            <h3>Formulario Doctores</h3>
+            
+            <!--Nombre doctores-->
+                <div class="formulariogrupo" id="grupo__nombredoc">
+                    <label for="nombredoc" class="formlabel">Nombre:</label>
+                        <div class="groupinput">
+                            <input class="forminput" name="nombredoc" id="nombredoc" type="text" placeholder="Ingrese su nombre">
+                            <i class="formvalestado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="forminputerror">El nombre solo puede contener letras</p>
+                </div>
+                
+            <!--Apellido doctores-->
+            <div class="formulariogrupo" id="grupo__apellidodoc">
+                <label for="apellidodoc" class="formlabel">Apellido:</label>
+                    <div class="groupinput">
+                        <input class="forminput" name="apellidodoc" id="apellidodoc" type="text" placeholder="Ingrese su apellido">
+                        <i class="formvalestado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="forminputerror">El apellido solo puede contener letras</p>
+            </div>
+
+            <!--Cedula doctores-->
+            <div class="formulariogrupo" id="grupo__ceduladoc">
+                <label for="ceduladoc" class="formlabel">Cédula:</label>
+                    <div class="groupinput">
+                        <input class="forminput" name="ceduladoc" id="ceduladoc" type="number" placeholder="Ingrese su cedula">
+                        <i class="formvalestado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="forminputerror">La cédula solo puede contener de 7 a 10 digitos sin espacios ni puntos</p>
+            </div> 
+            
+            <!--Especialidad doctores-->
+            <div class="formulariogrupo" id="grup__especialidaddoc">
+                <label for="especialidaddoc" class="formlabel">Especialidad:</label>
+                    <div class="groupinput">
+                        <select name="especialidad" id="especialidaddoc" class="especialidad">
+                            <option value="Medicina general">Medicina General</option>
+                            <option value="Cardiologia">Cardiología</option>
+                            <option value="Medicina interna">Medicina Interna</option>
+                            <option value="Dermatologia">Dermatología</option>
+                            <option value="Rehabilitacion">Rehabilitación Física</option>
+                            <option value="Psicologia">Psicología</option>
+                            <option value="Odontologia">Odontología</option>
+                            <option value="Radiologia">Radiología</option>
+                        </select>
+                    </div>
+            </div>
+
+
+            <!--Consultorio doctores-->
+            <div class="formulariogrupo" id="grupo__consultoriodoc">
+                <label for="consultoriodoc" class="formlabel">Consultorio:</label>
+                    <div class="groupinput">
+                        <input class="forminput" name="consultoriodoc" id="consultoriodoc" type="number" placeholder="Ingrese el consultorio">
+                        <i class="formvalestado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="forminputerror">El consultorio debe contener 3 números</p>
+            </div>
+
+            <!--Email doctores-->
+            <div class="formulariogrupo" id="grupo__emaildoc">
+                <label for="emaildoc" class="formlabel">Correo Electrónico:</label>
+                    <div class="groupinput">
+                        <input class="forminput" name="emaildoc" id="emaildoc" type="email" placeholder="Ingrese su correo eléctronico">
+                        <i class="formvalestado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="forminputerror">El correo electrónico debe contener un @</p>
+            </div>
+
+            <!--Mensaje doctores-->
+            <div class="formmessage" id="formmessagedoc">
+                <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error</b> Por favor llene el formulario correctamente</p>
+            </div>
+
+            <!--boton doctores-->
+            <div class="formulariogrupo formulariogrupobtnenviar">
+                <button type="submit" class="formulariobtn" id="formmensexitodoc">Enviar</button>
+                <p class="formmensexito" id="formmensexitodocp"> El formulario se envió exitosamente</p>
+            </div>
+        </form>
+
+        
+        <form class="forms" id="formspac">
+            <h3>Formulario Pacientes</h3>
+            <!--Nombre pacientes-->
+            <div class="formulariogrupo" id="grupo__nombrepac">
+                <label for="nombrepac" class="formlabel">Nombre:</label>
+                    <div class="groupinput">
+                        <input class="forminput" name="nombrepac" id="nombrepac" type="text" placeholder="Ingrese su nombre">
+                        <i class="formvalestado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="forminputerror">El nombre solo puede contener letras</p>
+            </div>
+            <!--Apellido pacientes-->
+            <div class="formulariogrupo" id="grupo__apellidopac">
+                <label for="apellidopac" class="formlabel">Apellido:</label>
+                    <div class="groupinput">
+                        <input class="forminput" name="apellidopac" id="apellidopac" type="text" placeholder="Ingrese su apellido">
+                        <i class="formvalestado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="forminputerror">El apellido solo puede contener letras</p>
+            </div>
+
+            <!--Cedula pacientes-->
+            <div class="formulariogrupo" id="grupo__cedulapac">
+                <label for="cedulapac" class="formlabel">Cédula:</label>
+                    <div class="groupinput">
+                        <input class="forminput" name="cedulapac" id="cedulapac" type="number" placeholder="Ingrese su cedula">
+                        <i class="formvalestado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="forminputerror">La cédula solo puede contener de 7 a 10 digitos sin espacios ni puntos</p>
+            </div> 
+
+            
+            <!--Edad pacientes-->
+            <div class="formulariogrupo" id="grupo__edadpac">
+                <label for="edadpac" class="formlabel">Edad:</label>
+                    <div class="groupinput">
+                        <input class="forminput" name="edadpac" id="edadpac" type="number" placeholder="Ingrese su edad">
+                        <i class="formvalestado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="forminputerror">Ingrese una edad válida</p>
+            </div> 
+            <!--Telefono pacientes-->
+            <div class="formulariogrupo" id="grupo__telefonopac">
+                <label for="telefonopac" class="formlabel">Teléfono:</label>
+                    <div class="groupinput">
+                        <input class="forminput" name="telefonopac" id="telefonopac" type="tel" placeholder="Ingrese su teléfono">
+                        <i class="formvalestado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="forminputerror">El teléfono debe contener 7 o 9 números</p>
+            </div> 
+            <!--Especialidad pacientes-->
+            <div class="formulariogrupo" id="especialidadreque">
+                <label for="especialidadop" class="formlabel">Especialidad Requerida:</label>
+                    <div class="groupinput">
+                        <select name="especialidad" id="especialidadop" class="especialidad">
+                            <option value="Medicina general">Medicina General</option>
+                            <option value="Cardiologia">Cardiología</option>
+                            <option value="Medicina interna">Medicina Interna</option>
+                            <option value="Dermatologia">Dermatología</option>
+                            <option value="Rehabilitacion">Rehabilitación Física</option>
+                            <option value="Psicologia">Psicología</option>
+                            <option value="Odontologia">Odontología</option>
+                            <option value="Radiologia">Radiología</option>
+                        </select>
+                    </div>
+            </div>
+            <!--Mensaje pacientes-->
+            <div class="formmessage" id="formmessagepac">
+            <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error</b> Por favor llene el formulario correctamente</p>
+            </div>
+            <!--boton pacientes-->
+            <div class="formulariogrupo formulariogrupobtnenviar">
+                <button type="submit" class="formulariobtn" id="formmensexitopac">Enviar</button>
+                <p class="formmensexito" id="formmensexitopacp"> El formulario se envió exitosamente</p>
+            </div>
+        </form> 
+
+        <div class="tablas">
+            <h2>Lista doctores</h2>
+            <table id="Tabladoctores" class="table table-bordered border-primary">
+            </table>
+        </div>
+
+        
+        <div class="tablas">
+            <h2>Lista Pacientes</h2>
+            <table id="Tablapacientes" class="table table-bordered border-primary">
+            </table>
+        </div>
+    
+    </main>
+
+    <script src="https://kit.fontawesome.com/14461a1d13.js" crossorigin="anonymous"></script>
+    <script src="./JS/validaciondoc.js"></script>
+    <script src="./JS/validacionpac.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

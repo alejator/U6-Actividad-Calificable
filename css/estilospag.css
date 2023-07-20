@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Mulish", "sans-serif";
+    src: url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+    }
+
+body{
+    background: url(bgpic.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header {
+    width: 100%;
+    background-color: #a6cbff;
+    height: 50px;
+    top: 0;
+    left: 0;
+    color: black; 
+    position: static;
+}
+
+.forms{
+    background-color: #a6cbff;
+    margin: 100px;
+    padding: 20px; 
+    border-style: solid; 
+    border-width: 3px;
+    border-color: #a6cbff;
+    border-radius: 15px; 
+    height: auto;
+    display: inline-table;
+    width: 35%;
+}
+.formlabel{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+.groupinput{
+    position: relative;
+}
+.forminput{
+    width: 100%;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transform: .3s ease all;
+}
+.forminput:focus{
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+.forminputerror{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+.forminputerror-activo{
+    display: block;
+}
+.formvalestado{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+.formmessage{
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+}
+.formmessage-activo{
+    display: block;
+}
+.formulariogrupobtnenviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulariobtn{
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1 ease all;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.formulariobtn:hover{
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+.formmensexito{
+    font-size: 14px;
+    color: #119200;
+    display: none;
+}
+.formmensexito-activo{
+    display: block;
+}
+
+.especialidad{
+    width: 100%;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+}
+
+.especialidad:focus{
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+/*estilos validación*/
+
+.formulariogrupo-correcto .formvalestado{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formulariogrupo-incorrecto .formlabel{
+    color: #bb2929;
+
+}
+
+.formulariogrupo-incorrecto .formvalestado{
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulariogrupo-incorrecto .forminput{
+    border: 3px solid #bb2929;
+}
+
+.tablas{
+    margin: 40px;
+    padding: 20px; 
+    border-style: hidden; 
+    border-width: 3px;
+    background-color: #a6cbff;
+    display: inline-table;
+    width: 40%;
+}
+
+/* responsive */
+@media screen and (max-width: 800px) {
+    .forms{
+        display: block;
+        margin: 18px;
+        right: 0%;
+        width: max-content;
+    }
+
+    .formulariobtn{
+        width: 100%;
+    }
+    .tablas{
+        display: block;
+        margin: 18px;
+        width: max-content;
+    }
+       
+}
